@@ -76,7 +76,7 @@ export default function (setLookup) {
 		return value;
 	});
 
-	[4, 5, 6, 8, 10, 12, 20, 25, 50, 100, 1000].forEach(i => {
+	[3, 4, 5, 6, 8, 10, 12, 20, 25, 50, 100, 1000].forEach(i => {
 		setLookup(`random.d${i}`, () => {
 			const value = 1 + Math.round(rng() * (i - 1));
 
