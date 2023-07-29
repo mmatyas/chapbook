@@ -31,6 +31,9 @@ initDisplay();
 initSound();
 initStory();
 
+addCustomStyles();
+runCustomScripts();
+
 /* If we are the micro build, backstage will be undefined by Webpack. */
 
 if (backstage && get('config.testing')) {
@@ -42,6 +45,3 @@ if (backstage && get('config.testing')) {
 if (!get('config.testing') && canRestoreFromStorage()) {
 	restoreFromStorage();
 }
-
-addCustomStyles();
-runCustomScripts();
